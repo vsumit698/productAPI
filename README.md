@@ -9,6 +9,7 @@ How to use--
 
 ->  request(Post Request)
     http://localhost:8000/products/create
+    
 ->   response
 { "data": { "product": { "_id": "5e7218a50de915060b8be89a", "name": "iphone", "quantity": "34"} } }
 
