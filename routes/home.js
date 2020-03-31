@@ -8,12 +8,14 @@ const productApi = require('../controllers/productApi');
            (URL [POST] : /products/:id/update_quantity/?number=10)
 
 */
-router.post('/products/create',productApi.createProduct);
 
-router.get('/products',productApi.getProducts);
+router.post('/products/create',productApi.createProduct);//API to add products to the database
 
-router.delete('/products/:id',productApi.deleteProduct);
+router.get('/products',productApi.getProducts);//API to list products
 
+router.delete('/products/:id',productApi.deleteProduct);//API to delete products
+
+
+//API to update quantity of a product
 router.post('/products/:id/update_quantity',productApi.updateProduct);
-
 module.exports = router;
