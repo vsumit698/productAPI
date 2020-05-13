@@ -8,7 +8,7 @@ const productApi = require('../controllers/productApi');
            (URL [POST] : /products/:id/update_quantity/?number=10)
 
 */
-
+//////////////////////
 router.post('/products/create',productApi.createProduct);//API to add products to the database
 
 router.get('/products',productApi.getProducts);//API to list products
